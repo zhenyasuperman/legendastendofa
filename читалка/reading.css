@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.number_of_chap{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(9, 15, 60, 0.871);
+}
+#number_of_chap{
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+}
+.muller{
+    text-align: center;
+    margin: 0 50% 0 50%;
+    justify-content: center;
+    justify-self: center;
+}
+.buttons{
+    position: fixed; /* Фиксируем кнопку относительно окна просмотра */
+    top: 20px; /* Отступ сверху */
+    right: 200px; /* Отступ справа */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    transform: translateY(-10px); /* Поднимаем кнопку на 10 пикселей */
+  background-color: #0056b3; /* Меняется цвет фона */
+}
+.buttons_2{
+    
+    position: fixed; /* Фиксируем кнопку относительно окна просмотра */
+    top: 20px; /* Отступ сверху */
+    right: 18px; /* Отступ справа */
+    padding: 10px 20px;
+    background-color: #748c09;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.fixed-button:hover {
+    background-color: #0056b3;
+  }
+#next_chapter{
+    text-decoration: none;
+    color: aliceblue;    
+}
+#back_ahead{
+    text-decoration: none;
+    color: aliceblue;    
+}

@@ -1,0 +1,85 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(pon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  body {
+    min-height: 100%;
+  }
+.block_of_charm{
+    top: 15%;
+    padding: 0;
+    
+    font-size: 18px;
+    position: relative;
+    
+    background-color: #292828b0;
+    display: flex;  
+    flex-direction: column;
+    
+    justify-self: center;
+    
+    
+    border-radius: 5px;
+  
+    width: 90%;
+    height: auto;
+    
+}
+#placebo{
+    width:260px;
+    height: 500px;
+    margin: 20px 10px 10px 20px;
+    position: relative;
+}
+.character_name{
+    position: absolute;
+    color: rgb(237, 237, 155);
+    
+}
+#opisanie_tag{
+    right: 70%;
+    top:10%;
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+}
+#outfit_tag{
+    right: 66.3%;
+    top:38%;
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+}
+.character_desc{
+    position: absolute;
+    color: rgba(206, 206, 12, 0.893);
+}
+.blocked{
+    position: relative;
+    left: 20%;
+    width: 1300px;
+    height: 300px;   
+    bottom: 200px;
+}
+#oo{
+    top: 18%;
+    right: 10%;
+    left: 20.5%;
+    font-size: 23px;
+}
+#outfit{
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    font-size: 23px;
+}
+#outfit_2{
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: 23px;
+}

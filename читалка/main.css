@@ -1,0 +1,356 @@
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(pon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    min-height: 100%;
+}
+.main{
+    display: flex;  
+    flex-direction: column;
+    justify-items: center;
+    justify-self: center;
+    background-color: rgba(115, 120, 117, 0.545);
+    border: solid #aeabab;
+    border-radius: 12px;
+    opacity: 90%;
+    width: 70%;
+    height: 90vh;
+    text-align: center;
+}
+
+.photo img{
+    border-radius: 10px;
+    position: absolute;
+    width: 270px;
+    height: 370px;
+    justify-self: left;
+    top: 5%;
+    left: 17%;
+    
+}
+.title{
+    position: absolute; 
+    color: rgb(214, 214, 214);
+    font-size: 13px;
+    left: 32%;
+    top: 6%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.button{
+    padding:5px 28px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #1d77df;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease; /* Плавная анимация */
+    position: absolute;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    
+}
+.button:hover{
+    background-color: #45a049; /* Изменение цвета фона */
+    transform: translateY(-5px); /* Поднимаем кнопку */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+  
+}
+#startreading{
+    padding: 8px 70px;
+    bottom: 52%;
+    left: 17%;
+}
+#characters{
+    padding: 8px 37px;
+    bottom: 46%;
+    left: 17%;
+}
+#bookmarks{
+    padding: 8px 39px;
+    bottom: 40%;
+    left: 17%;
+}
+.menu{
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.block {
+    display: flex;
+    flex-direction: row; /* Изменяем направление на горизонтальное */
+    position: absolute;
+    width: 40%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.796);
+    left: 32%;
+    top: 20%;
+    justify-content: space-around;
+    align-items: center; /* Центрируем элементы по вертикали */
+    padding: 7px;
+    box-sizing: border-box;
+}
+.animation {
+    color: #e18300;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    position: relative; /* Для корректного отображения псевдоэлемента */
+    margin: 0 10px; /* Добавляем отступы между ссылками */
+}
+.animation::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Немного опускаем псевдоэлемент */
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+.animation:hover::after {
+    width: 100%; /* При наведении линия расширяется */
+}
+#desctext {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px; /* Отступ сверху для отдаления от кнопок */
+    line-height: 1.5;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 10px; /* Добавим немного отступов, чтобы текст не прижимался к краям */
+}
+#chapters{
+    margin-right: 30px;
+}
+
+.blockinblock{
+    position: absolute;
+    background-color: rgba(252, 252, 252, 0.792);
+    width: 40%;
+    height: auto;
+    left: 32%;
+    top: 27%;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;   
+}
+#story{
+color: rgb(185, 185, 7);
+}
+#chapter_1{
+    color: #000;
+    text-decoration: none;
+}
+.tochki{
+    list-style-type: none;
+}
+.block_of_charm{
+    top: 15%;
+    padding: 0;
+    font-size: 18px;
+    position: relative;
+    background-color: #292828b0;
+    display: flex;  
+    flex-direction: column;
+    justify-self: center;    
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    
+}
+#placebo{
+    width:260px;
+    height: 500px;
+    margin: 20px 10px 10px 20px;
+    position: relative;
+}
+.character_name{
+    position: absolute;
+    color: rgb(237, 237, 155);
+    
+}
+#opisanie_tag{
+    right: 70%;
+    top:10%;
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+}
+#outfit_tag{
+    right: 66.3%;
+    top:38%;
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+}
+.character_desc{
+    position: absolute;
+    color: rgba(206, 206, 12, 0.893);
+}
+.blocked{
+    position: relative;
+    left: 20%;
+    width: 1300px;
+    height: 300px;   
+    bottom: 200px;
+}
+#oo{
+    top: 18%;
+    right: 10%;
+    left: 20.5%;
+    font-size: 23px;
+}
+#outfit{
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    font-size: 23px;
+}
+#outfit_2{
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: 23px;
+}
+.muller{
+    text-align: center;
+    margin: 0 50% 0 50%;
+    justify-content: center;
+    justify-self: center;
+}
+.buttons{
+    
+    position: absolute;
+    font-size: 200px;
+}
+/* Стиль для заголовка */
+.character_title {
+    text-align: center;
+    color: rgb(203, 213, 56);
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Стиль для контейнера с текстами */
+  .blockade{
+    padding: 0;
+    font-size: 18px;
+    position: relative;
+    align-items: center;
+    background-color: #0d0345b0;
+    display: flex;  
+    flex-direction: column;
+    justify-items: center;
+    justify-self: center;
+    background-color: rgba(61, 62, 62, 0.545);
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+  
+  }
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение между элементами */
+    width: 100%; 
+    margin-top: 20px;
+    padding: 0 10px;  /* Добавление небольших отступов по бокам для улучшения внешнего вида */
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Центрирование изображений */
+    gap: 20px;  /* Добавление промежутков между картинками */
+    width: 100%;
+  }
+  
+  .image-item { 
+    position: relative;
+    width: 210px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 10px; /* Это добавит отступы между картинками */
+    transition: transform 0.3s ease; /* Плавное изменение масштаба */
+  }
+  
+  /* Выравнивание заголовков и текста */
+  
+  /* Стиль для каждого элемента с картинкой */
+  .image-item {
+    position: relative;
+    width: 210px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Плавное изменение масштаба */
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: filter 0.5s ease; /* Плавный переход размытия */
+  }
+  
+  /* Размытие картинки при наведении */
+  .image-item:hover img {
+    filter: blur(5px); /* Размытие изображения */
+  }
+  
+  /* Стиль для текста и кнопки на картинке */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Тёмный фон с прозрачностью */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Скрыт по умолчанию */
+    color: white;
+    text-align: center;
+    transition: opacity 0.5s ease; /* Плавный переход для появления */
+  }
+  
+  /* Появление overlay при наведении на картинку */
+  .image-item:hover .overlay {
+    opacity: 1; /* Показываем текст и кнопку */
+  }
+  
+  .overlay a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Изменение фона кнопки при наведении */
+  .overlay a:hover {
+    background-color: #0056b3;
+  }
+  
+
+
